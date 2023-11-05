@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formulář pro aplikaci</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="form-container">
+    <h1>Apply for this position</h1>
+    <form id="applicationForm">
+        <div class="form-row">
+            <div class="form-group">
+              <label for="firstName">First Name</label>
+              <input type="text" id="firstName" name="firstName" required>
+            </div>
+            <div class="form-group">
+              <label for="lastName">Last Name</label>
+              <input type="text" id="lastName" name="lastName" required>
+            </div>
+          </div>
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="you@website.com" required>
+      </div>      
+      <div class="form-group">
+        <label for="linkedin">LinkedIn URL</label>
+        <input type="url" id="linkedin" name="linkedin" required>
+      </div>
+      <div class="form-group">
+        <label for="reason">Why do you want to become part of the Femme Palette team?</label>
+        <textarea id="reason" name="reason" required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="bestCandidate">Why are you the best candidate for this role?</label>
+        <textarea id="bestCandidate" name="bestCandidate" required></textarea>
+      </div>
+      <button type="submit">Submit Application</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

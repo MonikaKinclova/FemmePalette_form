@@ -1,0 +1,85 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0; 
+}
+
+h1 {
+    text-align: center; 
+    font-family: 'Times New Roman', serif; 
+}
+
+.form-container {
+    max-width: 600px; 
+    margin: 0 auto; 
+    padding: 20px; 
+    background-color: white; 
+    border: 1px solid #ddd;
+}
+
+.form-row {
+    display: flex; 
+    justify-content: space-between; 
+    gap: 20px; 
+}
+
+.form-group {
+    flex: 1; 
+    margin-bottom: 20px; 
+}
+
+label {
+    display: block; 
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+textarea {
+    width: calc(100% - 20px);
+    padding: 10px; 
+    border: 1px solid #c2c2c2f3; 
+    border-radius: 4px; 
+}
+
+textarea {
+    height: 100px; 
+    resize: vertical; 
+}
+
+button[type="submit"] {
+    width: 100%; 
+    padding: 10px;
+    background-color: #1f2a77; 
+    color: white; 
+    border: none;
+    border-radius: 4px; 
+    cursor: pointer; 
+    margin-top: 20px; 
+    transition: background-color 0.3s; 
+}
+
+button[type="submit"]:hover {
+    background-color: #2935a3; 
+}
+
+@media (max-width: 640px) {
+    .form-container {
+      width: 90%; 
+      margin: 0 auto;
+    }
+}
+
+.success-message {
+    padding: 20px;
+    background-color: #ececec; 
+    color: #2b302b;
+    border: 1px solid #fbfcf9; 
+    border-radius: 4px;
+    margin-top: 20px;
+    list-style: none; 
+}
+
+.success-message li {
+    margin-bottom: 10px;
+}
